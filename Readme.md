@@ -11,38 +11,58 @@ Clone the repository to your local machine using:
 git clone https://github.com/KrishnaGupta0405/AiWebScrapper.git
 cd AiWebScrapper
 ```
-
-## 🐍 Step 2: Create a Virtual Environment (Optional but Recommended)
-It is always a good practice to create a virtual environment to isolate dependencies:
-```shell
-python -m venv venv
-```
 - Now time to open our file in the virtual environment
 
-## ✅ Step 3: Activate the Virtual Environment
+## ✅ Step 2: Activate the Virtual Environment
 Now, activate the virtual environment according to your operating system:  
 
 | **Platform**     | **Command to Activate Virtual Environment**         |
 |-----------------|----------------------------------------------------|
-| 🟢 **Windows**    | ```venv\Scripts\activate```                |
-| 🍎 **MacOS**     | ```source venv/bin/activate```             |
-| 🐧 **Linux/Unix** | ```source venv/bin/activate```             |
+| 🟢 **Windows**    | ```.\a\Scripts\activate```                |
+| 🍎 **MacOS**     | ```source a/bin/activate```             |
+| 🐧 **Linux/Unix** | ```source a/bin/activate```             |
 
 Just in-case you make your mind to deactivate the virtual environment run this command-> 
 ```shell
 deactivate
 ```
 
-## 📦 Step 4: Install Dependencies
+## 📦 Step 3: Install Dependencies
 Now, install all the required dependencies from the requirements.txt file:
 ```shell
 pip install -r requirements.txt
 ```
-## ▶️ Step 5: Run the Streamlit App
+## ▶️ Step 4: Run the Streamlit App
 ```shell
 streamlit run main.py
 ```
+*Note -> In case, streamlit say can find the file or anythin just copy and paste this command->
+
+```shell
+# Deletes the virtual environment (if it exists)
+Remove-Item -Recurse -Force ai
+
+# Recreate the virtual environment
+python -m venv ai
+
+# Activate the virtual environment
+.\ai\Scripts\Activate
+
+# Upgrade necessary tools
+pip install --upgrade pip setuptools
+
+# Install dependencies from requirements.txt
+pip install -r requirements.txt
+
+#Run the Streamlit App
+streamlit run main.py
 ---
+
+Images of the actual project->
+![Scrapping_website](images/img1.png)
+![Running_the_ai](images/img2.png)
+
+--
 
 ## Requirements (For browser) 🌐
 Click the link to download the driver for your browser to help Selenium interact with the internet through your respective browser: [STABLE](https://googlechromelabs.github.io/chrome-for-testing/#stable)
