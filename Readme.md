@@ -56,6 +56,7 @@ pip install -r requirements.txt
 
 #Run the Streamlit App
 streamlit run main.py
+```
 ---
 
 Images of the actual project->
